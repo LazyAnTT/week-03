@@ -64,3 +64,39 @@ for kid, score in kid_dict.items():
         high_score = score
         high_score_kid = kid
 print(high_score_kid, high_score)
+
+#  Create a list of dictionaries ## {'Anna': 85, 'Jānis': 72, 'Līga': 95, 'Jēkabs': 98}
+
+kid_dict_list = [
+    {
+        "name": "Anna",
+        "grade": 85,
+    },
+    {
+        "name": "Jānis",
+        "grade": 72,
+    },
+    {
+        "name": "Līga",
+        "grade": 95,
+    },
+    {
+        "name": "Jēkabs",
+        "grade": 99,
+    },
+]
+print(kid_dict_list)
+
+high_score_kid_list = []
+minimum_score = 80
+
+for kid in kid_dict_list:
+    if kid["grade"] >= minimum_score:
+        high_score_kid_list.append(kid)
+
+print(
+    high_score_kid_list
+)  ## [{'name': 'Anna', 'grade': 85}, {'name': 'Līga', 'grade': 95}, {'name': 'Jēkabs', 'grade': 99}]
+
+for i, kid in enumerate(high_score_kid_list, start=1):
+    print(f"{i}. {kid["name"]} — {kid["grade"]}")
