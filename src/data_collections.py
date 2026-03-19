@@ -43,3 +43,24 @@ print(number_list[:3])  ## [1, 2, 3]
 print(number_list[-2:])  ## [5, 6]
 # Slice evevery second element
 print(number_list[::2])  ## [1, 3, 5]
+
+
+# Create a dict with following keys and values: {"Anna": 85, "Jānis": 72, "Līga": 95}
+
+kid_dict = {"Anna": 85, "Jānis": 72, "Līga": 95}
+print(kid_dict)  ## {'Anna': 85, 'Jānis': 72, 'Līga': 95}
+
+kid_dict.update({"Jēkabs": 99})  ## {'Anna': 85, 'Jānis': 72, 'Līga': 95, 'Jēkabs': 99}
+print(kid_dict)
+
+kid_dict["Jēkabs"] = 98
+
+print(kid_dict)  ## {'Anna': 85, 'Jānis': 72, 'Līga': 95, 'Jēkabs': 98}
+
+high_score_kid = ""
+high_score = 0
+for kid, score in kid_dict.items():
+    if high_score < score:
+        high_score = score
+        high_score_kid = kid
+print(high_score_kid, high_score)
