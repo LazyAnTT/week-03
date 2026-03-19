@@ -1,1 +1,1 @@
-## Week 3 homework: Functions and modulairity
+## Week 3 homework: Functions and modulairty.
