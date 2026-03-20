@@ -1,0 +1,8 @@
+C:\Users\raimi\OneDrive\Desktop\Python fundamentals\week-03\src>git log --oneline --graph 
+* c9aa067 (HEAD -> main, origin/main, origin/feature/week03-homework, origin/HEAD, feature/week03-homework) feature: add validators module with email, phone, date checks
+* fe7c556 feature: add utils exercises  with documented pure functions
+* ee8cda0 feature: add data collections exercise with combinations of dictionaries and lists
+* 615d542 feature: add data collections exercise with dictionaries
+* 3d1996d feature: add data collections exercise with lists
+* 1bd2a10 (origin/bugfix/general01, bugfix/general01) bugfix: fixed README typo
+* 239536b initial commit
